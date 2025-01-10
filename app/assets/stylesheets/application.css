@@ -1,10 +1,204 @@
-/*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
- */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.field input[type="email"],
+.field input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    margin-left: 5px;
+    font-weight: normal;
+    color: #555;
+}
+
+.actions {
+    text-align: center;
+}
+
+.actions .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.actions .button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+    margin: 20px 0;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.product-item a:hover {
+    text-decoration: underline;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+.product-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.product-image-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.product-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+    text-align: justify;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-back {
+    background-color: #3498db;
+}
+
+.btn-back:hover {
+    background-color: #2980b9;
+}
+
+.btn-edit {
+    background-color: #f1c40f;
+}
+
+.btn-edit:hover {
+    background-color: #d4ac0d;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
